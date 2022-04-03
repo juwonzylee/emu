@@ -1,0 +1,4 @@
+(library
+(name lib)
+(libraries ego sexplib yojson containers)
+(preprocess (pps ppx_deriving.std ppx_yojson_conv ppx_sexp_conv)))
