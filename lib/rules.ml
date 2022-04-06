@@ -93,7 +93,7 @@ let rec generate_rewrite_rules (p: phrase) : Rule.t list =
     let rules = List.fold_left (fun (acc:Rule.t list) c -> acc@(rewrite_chords c)) [] ch_lst in
     rules
 
-(* Cost function based on emotions *)
+(* Cost function *)
 let cost_function score (sym, children) =
   let node_score = 
     match Symbol.to_string sym with
